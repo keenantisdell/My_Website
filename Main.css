@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+section {
+    margin-top: 10% ;
+}
+body {
+    margin: auto;
+    background: #f2f2f2;
+    background-repeat: no-repeat;
+    color: #444444;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px; line-height: 1.8; text-shadow: 0 1px 0 #ffffff; max-width: 73%;
+}
+.column {
+	float: left;
+	width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
