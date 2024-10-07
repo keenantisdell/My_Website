@@ -4,24 +4,82 @@
 html{
     scroll-behavior: smooth;
 }
+.portfolio {
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 100px;
+	padding-left: 40px;
+	padding-right: 40px;
+	max-width: 1280px;
+}
 
-section {
-    margin-top: 10% ;
+#name {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+#title {
+    margin: 0;
 }
 body {
-    margin: auto;
+    margin: 0;
     background: #f2f2f2;
     background-repeat: no-repeat;
     color: #444444;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px; line-height: 1.8; text-shadow: 0 1px 0 #ffffff; max-width: 73%;
+    font-size: 16px; line-height: 1.8; text-shadow: 0 1px 0 #ffffff; 
+}
+dd {
+    font-size: 14px;
 }
 .column {
 	float: left;
 	width: 50%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1033px) {
   .column {
     width: 100%;
   }
+  #name {
+    font-size: 2.5em;
+  }
+}
+#icons {
+    padding: 0;
+    li {
+    display: inline-block;
+    padding-right: 10px;
+    transition:transform 0.3s;
+    }
+    li:hover {
+    transform: translateY(-7px);
+    }
+    img {
+	    width: 26px;
+	    height: 26px;
+    }
+}
+#skills{
+	ul{
+		list-style: none;
+	}
+	li{
+		display:inline-block;
+	}
+}		
+span {
+    background: rgba(244, 149, 149,.5);
+    text-shadow: none;
+    border-radius: 20px;
+    display: inline-block;
+    padding-left:10px;
+    padding-top:2.3px;
+    padding-right:10px;
+}
+#Frameworks span{
+    background: rgba(243, 209, 124,.5);
+}
+
+#Software span{
+    background: rgba(189, 220, 228,.5);
 }
